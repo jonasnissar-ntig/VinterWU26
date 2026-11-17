@@ -1,1 +1,98 @@
-/* Här skrivs all din CSS */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --bubblegum-pink: #FF6B81;
+    --bubblegum-pink-dark: #FF5D75;
+
+    --icy-blue: #C6E5FC;
+    --icy-blue-dark: #9BD3FB;
+
+    --azure-mist: #9BD3FB;
+    --azure-mist-dark: #D2FAFF;
+
+    --perwinkle: #ACACDE;
+    --perwinkle-dark: #A0A0D9;
+
+    --jet-black: #292F36;
+    --jet-black-dark: #282E35;
+}
+
+h1 {
+    font-family: "Crimson Text", serif;
+
+    font-weight: bolder;
+    font-style: normal;
+
+    font-size: 32px;
+
+    letter-spacing: 3%;
+    word-spacing: 13%;
+
+    color: var(--jet-black);
+}
+
+a:link {
+    font-family: "Crimson Text", serif;
+
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 20px;
+
+    letter-spacing: 3%;
+    word-spacing: 8%;
+
+    color: var(--jet-black);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--jet-black);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* UNIVERSAL HEADER */
+.universal_header {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: baseline;
+
+    padding: 0px 32px 16px 16px;
+
+    background-color: var(--bubblegum-pink);
+    border-radius: 8px;
+}
+
+.universal_header section {
+    display: flex;
+    gap: 18px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    padding: 32px 0px 32px 0px;
+
+    background-color: var(--icy-blue);
+    border-radius: 8px;
+}
+
+.hero h1 {
+    max-width: 400px;
+    text-align: center;
+}
+
+.hero img {
+    height: 250px;
+    border-radius: 30px;
+}
